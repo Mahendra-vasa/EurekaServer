@@ -1,0 +1,43 @@
+mahendra83/mahidockerrepo:tagname
+docker tag productservice:productlatest mahendra83/mahidockerrepo:productlatest
+
+docker push mahendra83/mahidockerrepo:productlatest
+
+mahendra83/mahidockerrepo:productlatest
+
+docker build --tag=productsearchservice:searchlatest .
+
+docker tag productsearchservice:searchlatest mahendra83/mahidockerrepo:searchlatest
+
+docker push mahendra83/mahidockerrepo:searchlatest
+
+ProductSearchServiceContainer
+
+
+docker build --tag=customerservice:customerlatest .
+docker tag customerservice:customerlatest mahendra83/mahidockerrepo:customerlatest
+docker push mahendra83/mahidockerrepo:customerlatest
+
+
+table:
+product
+
+coluns:
+
+id
+name
+desc
+price
+creation_dt
+Create Table Product(id int(11) NOT NULL AUTO_INCREMENT,name varchar(255),description varchar(255),price varchar(255),creation_dt TIMESTAMP,PRIMARY KEY (`id`));
+Create Table Product(id int(11) NOT NULL AUTO_INCREMENT,username varchar(255),password varchar(255),email varchar(255),mobileno varchar(255), creation_dt TIMESTAMP,PRIMARY KEY (`id`));
+
+{
+    "id": 2,
+    "userName": "Sravs",
+    "password": "password",
+    "email": "sravs.vasa@gmail.com",
+    "mobileNumber": "9177849212",
+    "userType":"customer",
+    "creation_Date": "2022-09-08"
+} 
